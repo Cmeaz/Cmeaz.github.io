@@ -1,9 +1,9 @@
 *{
     font-family: Arial;
-    background-color:rgb(168, 43, 226);
-    color: rgb(255, 0, 0);
+    background-color:black(168, 43, 226);
+    color: red(255, 0, 0);
     font-size: 15px;
-    border-color:rgb(255, 0, 0);
+    border-color:red(255, 0, 0);
     margin: 5px;
     margin-top:5px;
 }
