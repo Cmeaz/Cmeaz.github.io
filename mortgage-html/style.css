@@ -1,47 +1,15 @@
 *{
     font-family: Arial;
-    background-color:rgb(76, 226, 43);
-    color: rgb(25, 0, 255);
+    background-color:rgb(168, 43, 226);
+    color: rgb(255, 0, 0);
     font-size: 15px;
-    border-color:rgb(0, 72, 255);
+    border-color:rgb(255, 0, 0);
     margin: 5px;
     margin-top:5px;
 }
 
-h1{
-    color: Red
-}
-
-h2{
-    color:red
-   
-}
 button {
     color: rgb(25, 0, 255);
     font-size: 15px;
     size: 30px;
-}
-
-.border{
-    color:blue;
-    background:rgb(76, 226, 43)
-}
-.wrapper {
-    height: 100vh;
-    overflow-x: hidden; 
-    overflow-y: auto; 
-    perspective: 2px;  
-}
-
-.parallax::after {
-    content: " ";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    background-size: 100%;
-    background-attachment: fixed;
-    background-size: cover;
 }
