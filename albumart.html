@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    var gap = 10;
+var cirNum = 40;
+var cirSize = 20;
+var angle = 0;
+var ptNum = 100;
+var rectSize = 600;
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  angleMode(DEGREES);
+}
+
+// Loop forever
+function draw() {
+    bakcground('Black');
+
+    // Custimize mouse
+    noCursor(); // Hide mouse
+    noStroke(); // Disable outline
+    fill('white');
+    circle(mouseX, mouseY, 5)
+
+    //main graph
+    push(); // Store current drawing settings
+    Translate(width/2, height/2);
+    rotate(angle);
+    angle += map (mouseX, 0, width, -0.1, 0.1);
+    noFill();
+    strokeWeight(1);
+    for (var lcv = 0; lcv < cirNum; lcv++) {
+        arc(0, 0, cirSize + gap * lcv, cirSize + gap * lcv,
+            angle * lcv, 360 - angle/2)
+    }
+    pop(); // Restore pushed drawing style
+}
+</script>
+</body>
+</html>
