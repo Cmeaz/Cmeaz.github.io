@@ -7,13 +7,13 @@
     <title>About</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.min.js" integrity="sha512-WJXVjqeINVpi5XXJ2jn0BSCfp0y80IKrYh731gLRnkAS9TKc5KNt/OfLtu+fCueqdWniouJ1ubM+VI/hbo7POQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-<body style="background: black;">
+<body style="background: Red;">
     <script>
-        var gap = 30;
+        var gap = 62;
         var cirNum = 10;
-        var cirSize = 20;
-        var angle = 0;
-        var ptNum = 500;
+        var cirSize = 2;
+        var angle = 10;
+        var ptNum = 1000;
         var rectSize = 600;
 
         function setup() {
@@ -22,13 +22,13 @@
         }
 
         function draw() {
-            background('black');
+            background('blue');
 
             
             noCursor();
             noStroke(); 
-            fill('white');
-            circle(mouseX, mouseY, 5);
+            fill('Red');
+            circle(mouseX, mouseY, 20);
 
           
             push();  
@@ -36,8 +36,8 @@
             rotate(angle);
             angle += map(mouseX, 0, width, -0.1, 0.1);
             noFill();
-            stroke('white');
-            strokeWeight(1);
+            stroke('Red');
+            strokeWeight(5);
             for (var i = 0; i < cirNum; i++) {
                 arc(0, 0, cirSize + gap * i, cirSize + gap * i,
                     angle * i, 360 - angle/2);
@@ -45,27 +45,26 @@
             pop();  
             
             push();
-            translate(width/2, height-90);
+            translate(width/2.09, height-125);
             noStroke();
             textFont('Arial');
-            textSize(10);
+            textSize(16);
             textAlign(CENTER, CENTER);
-            text("Album Title Here", 0, 0)  // x, y
+            text(" I go to school at CHS. I do Football, and wrestle. I do cleanup for church. Im from WIS to"
+            , 0, 0)
             textSize(8)
-            text("This is a demo", 0, 20);
             pop();
 
-            // Border
             push();
             translate(width/2, height/2);
             noFill();
-            stroke('white');
-            strokeWeight('2');
+            stroke('Red');
+            strokeWeight('5');
             rectMode(CENTER);
             rect(0, 0, rectSize, rectSize);
 
-            // Random noise in background
-            stroke('white');
+         
+            stroke('Red');
             strokeWeight(1);
             for (var i = 0; i < ptNum; i++) {
                 point(random(-rectSize/2, rectSize/2),
@@ -74,14 +73,8 @@
             pop();
         }
     </script>
+
+
 </head>
-<body>
-        </script>
-    <p>  I am Cody Measner. I am from Janesville WI.
-         I am a Freshman(as of now) at Craig Highschool.
-         Not to big of a educational background.
-         I work for Consessions and i am apart of a Clean up service in my town.
-        I do football, and wrestling for sports. 
-        I workout I am also apart of a workout organization.</p>
-</body>
+
 </html>
