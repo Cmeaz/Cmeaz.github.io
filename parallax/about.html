@@ -7,7 +7,7 @@
     <title>About</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.min.js" integrity="sha512-WJXVjqeINVpi5XXJ2jn0BSCfp0y80IKrYh731gLRnkAS9TKc5KNt/OfLtu+fCueqdWniouJ1ubM+VI/hbo7POQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-<body style="background: Red;">
+<body style="background: #8ef0bf;">
     <script>
         var gap = 62;
         var cirNum = 10;
@@ -22,12 +22,12 @@
         }
 
         function draw() {
-            background('rgb(73, 224, 73)');
+            background('#170529');
 
             
             noCursor();
             noStroke(); 
-            fill('red');
+            fill('#8ef0bf');
             circle(mouseX, mouseY, 20);
 
           
@@ -36,7 +36,7 @@
             rotate(angle);
             angle += map(mouseX, 0, width, -0.1, 0.1);
             noFill();
-            stroke('Red');
+            stroke('#8ef0bf');
             strokeWeight(5);
             for (var i = 0; i < cirNum; i++) {
                 arc(0, 0, cirSize + gap * i, cirSize + gap * i,
@@ -83,7 +83,7 @@
             push();
             translate(width/2, height/2);
             noFill();
-            stroke('Red');
+            stroke('#8ef0bf');
             strokeWeight('5');
             rectMode(CENTER);
             rect(0, 0, rectSize, rectSize);
