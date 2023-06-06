@@ -1,7 +1,12 @@
  *{
     Background-color: #170529;
     color:#f0bf8e;
-    font-family: Arial
+    font-family: Arial;
+    font-weight: 500;
+    font-stretch: 25;
+    font-variant:initial;
+    outline-color: #8ef0bf;
+    outline-width: 53;
 }
 
 button {
@@ -27,6 +32,19 @@ p {
     color: #f0bf8e;
     font-family: Arial;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
